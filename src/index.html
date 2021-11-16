@@ -6,44 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheel of DOOM</title>
     <link rel="stylesheet" href="/src/scss/style.scss">
+    <script src="https://kit.fontawesome.com/a7bdada9d1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <main>
-        <div class="landing">
-            <div class="landing-title">
-                <h1>wheel of doom</h1>
-            </div>
+    <header>
+        <section class="slot-body">
             <div class="slot-machine">
-                <div class="slot-machine-body">
-                    <div class="slot-machine-elipse">
-                        <div class="slot-machine-logo"></div>
-                    </div>
-                    <div class="slot-machine-screen">
-                        <h3 class="slot-machine-names">Caio</h3>
-                    </div>
-                </div>               
+                <img id="slot" src="/src/assets/Slots.png">
+                <p class="spinning-name">jamonyrk</p>
             </div>
+            <!-- <div class="slot-machine-names"></div>-->
+        </section>
+    </header>
+
+    <main>
+        <section class="button-spin">
             <div class="slot-machine-spin">
-                <button class="btn">¡Girar!</button>
+                <button class="btn" id="btn-spin">¡Girar!</button>
             </div>
+        </section>
+
+        <section class="button-add">
             <div class="players-input">
                 <div class="input-container">
                     <input type="text">
-                        <button>Añadir</button>
+                    <button class="btn" id="btn-add-player">Añadir</button>
                 </div>
             </div>
-            <div class="players-list-container">
-                <div class="player-name-container">
-                    <h3>Sara</h3>
-                </div>
+        </section>
+
+        <section class="players-list">
+            <div id="players">
+                <div class="player">
+                    <div class="content">
+                        <input type="text" class="text" value="Jugador de prueba" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="btn" id="btn-edit-player"><i class="far fa-edit"></i></button>
+                        <button class="btn" id="btn-del-player"><i class="fas fa-trash-alt"></i></button>
+                        <button class="btn" id="btn-hide-player"><i class="far fa-check-square"></i></button>
+                    </div>
+                </div>                     
             </div>
+        </section>
+
+        <section id="extra-tabs">
             <div class="tabs">
                 <button>Jugadores</button>
                 <button>Doomeds</button>
             </div>
-        </div>
+        </section>
     </main>
-    <footer>Los Picateclas&copy;</footer>
+
+    <footer id="footer">
+        <p>Los Picateclas&copy;</p>
+    </footer>
+
     <script src="/src/ts/app.ts"></script>
 </body>
 </html>
