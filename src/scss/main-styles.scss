@@ -1,0 +1,67 @@
+html{
+    height: 100%;
+}
+
+body {
+    background: rgb(33,94,39);
+    background: radial-gradient(circle, rgb(33, 94, 39) 25%, rgba(17,80,35,1) 41%, rgba(6, 31, 14, 0.842) 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    height: 100%;
+}
+
+.slot-machine{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    text-align: center;
+}
+
+#slot-machine-names{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-spin{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+#footer {
+    position:fixed;
+    left:0;
+    bottom:0;
+    height:30px;
+    width:100%;
+}
+
+.far fa-edit, .fas fa-trash-alt, .far fa-check-square{
+    font-size: 5vw;
+    background-color: #C4C4C4;
+    
+}
+
+.player{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2vw;
+    background-color: #C4C4C4;
+}
+
+.slot-machine-names{
+    float: center;
+    z-index: -1;
+}
+
+.button-spin{
+    margin-top: 5vw;
+}
