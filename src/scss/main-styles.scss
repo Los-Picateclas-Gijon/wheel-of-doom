@@ -6,10 +6,17 @@ body {
     background: rgb(33,94,39);
     background: radial-gradient(circle, rgb(33, 94, 39) 25%, rgba(17,80,35,1) 41%, rgba(6, 31, 14, 0.842) 92%);
     font-family: 'Montserrat', sans-serif;
+    margin: 1.25%;
 }
 
 main{
     height: 100%;
+}
+
+.button-spin{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .slot-machine{
@@ -17,106 +24,125 @@ main{
     justify-content: center;
     align-content: center;
     position: relative;
-    text-align: center;
+    margin-top: 5vw;
 }
-
-#slot-machine-names{
+.spinning-name{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 10vw;
+    text-align: center;
 }
 
-.button-spin{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 10vw;
-    margin-bottom: 10vw;
+#extra-tabs {
+    margin-top: 30vw;
 }
 
 #footer {
-    position:fixed;
-    left:0;
-    bottom:0;
-    height:30px;
-    width:100%;
+    
+
 }
 
 .far fa-edit, .fas fa-trash-alt, .far fa-check-square{
     font-size: 5vw;
+}
+
+.delete, .edit, .text {
+    background-color:#C4C4C4;
+    border: none;
+    padding-top: 0vw;
+}
+
+.actions {
+    display: flex;
+    align-content: center;
     background-color: #C4C4C4;
+    border: none;
+    height: 4vw;
+    margin-top: 2.1vw;
+    
+}
+
+#players {
     
 }
 
 .player{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 2vw;
+    justify-content: space-around;
+    height: 8vw;
     background-color: #C4C4C4;
+    margin-bottom: 2vw;  
 }
 
-.slot-machine-names{
-    float: center;
-    z-index: -1;
-}
-
-.button-spin{
-    margin-top: 5vw;
+.content {
+    display: flex;
+    align-content: center;
 }
 
 #btn-spin {
     background-color: #D0223E;
     text-decoration:none;
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 100%;
     color:#ffffff;
-    box-shadow: 4px 4px 7px 1px rgb(100, 100, 100);
-    padding-top:17px;
-    padding-bottom:17px;
-    padding-left:60px;
-    padding-right:60px;
-    border-width: 0px;
+    box-shadow: 15% 30% 1% 20% rgb(100, 100, 100);
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left: 5%;
+    padding-right:5%;
     border-radius: 10px; 
-    margin-bottom: 15px;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 #btn-add-player {
-background-color: #D0223E;
-text-decoration:none;
-font-weight: 600;
-font-size: 15px;
-color:#ffffff;
-box-shadow: 4px 4px 7px 1px rgb(100, 100, 100);
-padding-top:13px;
-padding-bottom:13px;
-padding-left:30px;
-padding-right:30px;
-border-width: 0px;
-border-radius: 10px;
-margin-left: 15px;
+    background-color: #D0223E;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 2vw;
+    color:#ffffff;
+    padding-top:2%;
+    padding-bottom:2vw;
+    padding-left:1vw;
+    padding-right:1vw;
+    border-width: 0%;
+    border-radius: 15%;
+    margin-left: 2vw;
+    width: 27vw;
 }
 
 .players-input{
     display: flex;
+    width: 30%;
+    background-color:#C4C4C4;
+    text-decoration:none;
+    font-size: 15px;
+    color:#ffffff;
+    box-shadow: 4px 4px 7px 1px rgb(100, 100, 100);
+    border-width: 0px;
+    border-radius: 10px;
 }
 
 .input-container {
-width: 25%;
-background-color:#C4C4C4;
-text-decoration:none;
-font-size: 15px;
-color:#ffffff;
-box-shadow: 4px 4px 7px 1px rgb(100, 100, 100);
-border-width: 0px;
-border-radius: 10px;
+    display:flex;
+    justify-content: space-around;
 }
 
-#inputext {
+#new-player-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vw;
+    margin: 0vw 15vw 4vw 15vw;
+}
+
+#new-player-input {
     color: black;
+    width: 2vw;
+    background-color: #C4C4C4;
     border-radius: 20px;
     border-width: 0px;
     width: 100%;
-
 }
