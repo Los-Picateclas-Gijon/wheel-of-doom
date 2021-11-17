@@ -27,18 +27,16 @@
             </div>
         </section>
 
-        <section class="button-add">
-            <div class="players-input">
-                <div class="input-container">
-                    <input type="text">
-                    <button class="btn" id="btn-add-player">Añadir</button>
-                </div>
-            </div>
-        </section>
+
+            <form id="new-player-form">
+                <input type="text" id="new-player-input">
+                <button type="submit" id="btn-add-player">Añadir jugador</button>
+            </form>
+
 
         <section class="players-list">
             <div id="players">
-                <div class="player">
+                <!-- <div class="player">
                     <div class="content">
                         <input type="text" class="text" value="Jugador de prueba" readonly>
                     </div>
@@ -47,7 +45,7 @@
                         <button class="btn" id="btn-del-player"><i class="fas fa-trash-alt"></i></button>
                         <button class="btn" id="btn-hide-player"><i class="far fa-check-square"></i></button>
                     </div>
-                </div>                     
+                </div>-->
             </div>
         </section>
 
@@ -63,6 +61,6 @@
         <p>Los Picateclas&copy;</p>
     </footer>
 
-    <script src="/src/ts/app.ts" type="module"></script>
+    <script src="/src/scripts/list.js"></script>
 </body>
 </html>
