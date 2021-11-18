@@ -1,9 +1,16 @@
+import { addEventBtnLoop, getWinner } from "./spin";
+
+
+function app()
+{
+    addEventBtnLoop();
+
     const newPlayer = document.querySelector("#new-player-form");
     const input = document.querySelector("#new-player-input");
     const list_el = document.querySelector("#players");
     const buttonAdd = document.querySelector("#btn-add-player")
 
-    export let players = [];
+    let players = [];
 
     buttonAdd.addEventListener('click', () => {
         
@@ -67,55 +74,13 @@
         player_delete_el.addEventListener('click', (e) => {
             list_el.removeChild(player_el);
             function del(){
+                let indice = players.indexOf('')
+                
                 players.splice(0,1);
                 }
                 del()
         });
 });
+}
 
-
-
-// ----------------------------------------------------------------------------------
-// // let playersList: string[];
-
-// const inputNamePlayer= document.querySelector("player") as HTMLInputElement;
-// const btnAddPlayer= document.querySelector("btn-add-player") as HTMLButtonElement;
-// const btnDelPlayer= document.querySelector("btn-del-player") as HTMLButtonElement;
-// const btnEditPlayer= document.querySelector("btn-edit-player") as HTMLButtonElement;
-
-// btnAddPlayer.addEventListener("click", addPlayer);
-// btnDelPlayer.addEventListener("click", deletePlayer);
-// btnEditPlayer.addEventListener("click", editPlayer);
-
-// export function addPlayer()
-// // {
-// //     if (inputNamePlayer.value != ""){
-// //         playersList.push(inputNamePlayer.value);
-// //     }
-// //     else{
-// //         alert("Escribe tu nombre")
-// //     }
-// //     console.log("la lista no está creada")
-// // }
-// export function deletePlayer(){
-// }
-// console.log("la lista está vacia y sin crear")
-
-// export function editPlayer(){
-
-// }
-// function createList(){
-//     let ul = document.createElement("ul")
-//     let li = document.createElement("li")
-// }
-//-----------------------------------------------------------------------------------
-
-    // const btnAddPlayer= document.querySelector("btn-add-player") as HTMLButtonElement;
-    // const btnDelPlayer= document.querySelector("btn-del-player") as HTMLButtonElement;
-    // const btnEditPlayer= document.querySelector("btn-edit-player") as HTMLButtonElement;
-
-    // btnAddPlayer.addEventListener("click", addPlayer);
-    // btnDelPlayer.addEventListener("click", deletePlayer);
-    // btnEditPlayer.addEventListener("click", editPlayer);
-
-// ----------------------------------------------------------------------------------
+app();
