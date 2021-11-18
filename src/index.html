@@ -14,7 +14,7 @@
         <section class="slot-body">
             <div class="slot-machine">
                 <img id="slot" src="/src/assets/Slots.png">
-                <p class="spinning-name">jamonyrk</p>
+                <p class="spinning-name" id="spinning-name">jamonyrk</p>
             </div>
             <!-- <div class="slot-machine-names"></div>-->
         </section>
@@ -27,11 +27,10 @@
             </div>
         </section>
 
-
-            <form id="new-player-form">
+            <div id="new-player-form">
                 <input type="text" id="new-player-input">
-                <button type="submit" id="btn-add-player">Añadir jugador</button>
-            </form>
+                <button class="button"id="btn-add-player">Añadir jugador</button>
+            </div>
 
 
         <section class="players-list">
@@ -61,6 +60,6 @@
         <p>Los Picateclas&copy;</p>
     </footer>
 
-    <script src="/src/scripts/list.js"></script>
+    <script src="/src/scripts/app.js" type="module"></script>
 </body>
 </html>
