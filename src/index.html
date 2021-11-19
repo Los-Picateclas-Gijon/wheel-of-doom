@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of DOOM</title>
+    <link rel="stylesheet" href="/src/scss/style.scss">
+    <audio id="doomed" src="/src/assets/DOOOOOOM.mp3" preload="auto"></audio>
+    <script src="https://kit.fontawesome.com/a7bdada9d1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <section class="slot-body">
+            <div class="slot-machine">
+                <img id="slot" src="/src/assets/Slots.png">
+                <p class="spinning-name" id="spinning-name">jamonyrk</p>
+            </div>
+            <!-- <div class="slot-machine-names"></div>-->
+        </section>
+    </header>
+
+    <main>
+        <section class="button-spin">
+            
+                <button class="btn" id="btn-spin">¡Girar!</button>
+
+        </section>
+
+            <div id="new-player-form">
+                <input type="text" id="new-player-input">
+                <button class="button"id="btn-add-player">Añadir jugador</button>
+            </div>
+
+
+        <section class="players-list">
+            <div id="players">
+                <!-- <div class="player">
+                    <div class="content">
+                        <input type="text" class="text" value="Jugador de prueba" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="btn" id="btn-edit-player"><i class="far fa-edit"></i></button>
+                        <button class="btn" id="btn-del-player"><i class="fas fa-trash-alt"></i></button>
+                        <button class="btn" id="btn-hide-player"><i class="far fa-check-square"></i></button>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+
+        <section id="extra-tabs">
+            <div class="tabs">
+                <button>Jugadores</button>
+                <button>Doomeds</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>Los Picateclas&copy;</p>
+    </footer>
+
+    <script src="/src/scripts/app.js" type="module"></script>
+</body>
+</html>
