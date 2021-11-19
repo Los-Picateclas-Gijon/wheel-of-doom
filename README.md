@@ -10,10 +10,6 @@ To run in hot module reloading mode
 
         npm run start
 
-To create a production build
-
-        npm run build-prod or npm run buildlight
-
 Stack
 
         Parcel
