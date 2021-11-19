@@ -17,6 +17,7 @@ function app()
         const player = input.value;
 
         if (!player) {
+            document.getElementById('doomed').play();
             alert("Añade un jugador!");
             return;
         }
