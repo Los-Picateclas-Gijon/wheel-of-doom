@@ -16,6 +16,6 @@ To create a production build
 
 Stack
 
-    Parcel
-    Sass
-    Javascript
+        Parcel
+        Sass
+        Javascript
